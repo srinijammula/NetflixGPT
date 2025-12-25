@@ -1,12 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Body from './components/Body';
+import Browse from './components/Browse';
 
 function App() {
-  return (
-    <div className="font-bold text-3xl text-center">
-      Hello Damon Salvatore!
-    </div>
-  );
+  return(
+  <Body/>
+  )
 }
 
 export default App;
