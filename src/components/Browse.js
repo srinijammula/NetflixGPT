@@ -1,9 +1,11 @@
+import useNowPlayingMovies from "../hooks/useNowPlayingMovies";
 import Header from "./Header";
 
 const Browse = () =>{
-return (
-    <Header/>
-)
+    useNowPlayingMovies();
+    return (
+        <Header/>
+    )
 }
 
 export default Browse;
