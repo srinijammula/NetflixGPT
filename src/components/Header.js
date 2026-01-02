@@ -34,7 +34,7 @@ const Header = () => {
         return ()=> unsubscribe();
       },[]);
     return(
-        <div className="absolute p-4 w-screen bg-gradient-to-b from-black z-10 flex justify-between">
+        <div className="absolute p-4 w-full bg-gradient-to-b from-black z-10 flex justify-between">
             <img className="w-44"
             src={LOGO_URL} alt="logo" />
             {user && <div className="flex items-center gap-4">
