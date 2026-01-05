@@ -5,7 +5,7 @@ import GptSearchBar from "./GptSearchBar";
 const GptSearch = () => {
     return (
         <div>
-            <img className="absolute -z-10"
+            <img className="fixed -z-10"
             src={BACKGROUND_URL}/>
             <GptSearchBar/>
             <GptMovieSuggestions/>
