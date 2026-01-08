@@ -50,8 +50,8 @@ const Header = () => {
     }
 
     return(
-        <div className="absolute p-4 w-full bg-gradient-to-b from-black z-10 flex justify-between">
-            <img className="w-44"
+        <div className="absolute p-4 w-full bg-gradient-to-b from-black z-10 flex flex-col md:flex-rowjustify-between">
+            <img className="w-44 mx-auto md:mx-0"
             src={LOGO_URL} alt="logo" />
             {user && <div className="flex items-center gap-4">
                 {showGptSearch &&<select className="bg-black bg-opacity-70 text-white p-2 rounded-lg" onChange={handleLanguageChange}>
