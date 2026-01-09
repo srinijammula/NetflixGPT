@@ -66,9 +66,10 @@ const Login = () =>{
 return(
     <div>
         <Header/>
-        <img className="absolute -z-10"
+        <img className="fixed h-full w-full object-cover -z-10"
         src={BACKGROUND_URL}/>
-    <form onSubmit={(e)=>{e.preventDefault();}} className="p-12 bg-black bg-opacity-75 text-white absolute w-1/3 top-24 mx-auto right-0 left-0">
+    <div className="">
+    <form onSubmit={(e)=>{e.preventDefault();}} className="p-6 md:p-12 bg-black bg-opacity-75 text-white absolute w-full md:w-1/3 top-24 mx-auto right-0 left-0">
         <h1 className="text-4xl font-bold p-2 mx-2 mb-4">{isSignInForm ? "Sign In" : "Sign Up"}</h1>
         {!isSignInForm && <input ref={name} type="Name" placeholder="Full Name" className="p-3 m-3 w-full rounded-md bg-gray-700"/>}
         <input ref={email} type="email" placeholder="Email or phone number" className="p-3 m-3 w-full rounded-md bg-gray-700"/>
@@ -77,6 +78,7 @@ return(
         <button type="submit" onClick={handleButtonClick} className="p-3 m-3 bg-red-600 w-full rounded-md">{isSignInForm ? "Sign In" : "Sign Up"}</button>
         <p className="p-3 text-xl cursor-pointer" onClick={toggleSignIn}>{isSignInForm ? "New to Netflix? Sign Up" : "Already have an account? Sign In"}</p>
     </form>
+    </div>
     </div>
 )
 }

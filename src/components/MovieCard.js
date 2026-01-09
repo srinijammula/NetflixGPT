@@ -5,7 +5,7 @@ const MovieCard = ({poster}) => {
         return null;
     }
     return (
-        <div className="w-48 shrink-0">
+        <div className="w-28 md:w-48 shrink-0">
             <img src={IMG_CDN + poster} alt="movieimage"/>
         </div>
     )
