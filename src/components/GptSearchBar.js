@@ -17,7 +17,7 @@ const GptSearchBar = () =>{
     }
 
     const handleGptSearch = async () => {
-        console.log(searchText.current.value);
+        //console.log(searchText.current.value);
         const response = await client.responses.create({
             model: 'gpt-4o',
             instructions: 'You are NetflixGPT, an AI assistant that helps users discover movies. Respond with movie recommendations based on the user search intent. Only give 5 movie names in the response. Example : Inception, The Matrix, Interstellar, The Terminator, Back to the Future. If movie name is given, give full movie name and 4 other similar movies in same format. Do not add any additional text.',

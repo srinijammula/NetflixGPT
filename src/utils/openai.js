@@ -6,10 +6,10 @@ export const client = new OpenAI({
   dangerouslyAllowBrowser: true,
 });
 
-const response = await client.responses.create({
-  model: 'gpt-4o',
-  instructions: 'You are NetflixGPT, an AI assistant that helps users discover movies. Respond with movie recommendations based on the user search intent. Be concise, friendly, and informative. Only give 5 movies in the response.',
-  input: 'Search movies about time travel',
-});
+// const response = await client.responses.create({
+//   model: 'gpt-4o',
+//   instructions: 'You are NetflixGPT, an AI assistant that helps users discover movies. Respond with movie recommendations based on the user search intent. Be concise, friendly, and informative. Only give 5 movies in the response.',
+//   input: 'Search movies about time travel',
+// });
 
-console.log(response.output_text);
+// console.log(response.output_text);
